@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+.vite
+*.min.js
+package-lock.json
+
+# package.json переписывает scripts/generate-play-commands.mjs
+# (JSON.stringify с отступом 2) — форматировать его нечем и незачем:
+# после каждого play:generate он снова стал бы «неотформатированным».
+package.json
