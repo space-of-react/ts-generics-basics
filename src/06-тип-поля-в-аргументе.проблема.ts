@@ -4,7 +4,10 @@ export function assign<T extends object, K extends keyof T>(obj: T, key: K, valu
     return copy;
 }
 
-const user = { name: 'Макс', age: 30 };
+const user = { 
+    name: 'Макс', 
+    age: 30 
+};
 
 export const older = assign(user, 'age', 31);
 
